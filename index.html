@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>base apparel</title>
+</head>
+<body>
+    <main id="desktop">
+        <div class="info-area">
+            <img src="logo.svg" alt="logo">
+            <h2 id="pink">We're</h2>
+            <h2 id="black">Coming Soon </h2>
+            <p id="info">Hello felow shoppers! We're currently building our new fashion store
+                . Add your email below to stay up-to-date with announcements and launch deals.
+            </p>
+            <div class="input-email">
+                <input class="text-input" type="text" placeholder="Email Address">
+                <img id="img-error" src="icon-error.svg" alt="">
+                <button onclick="error()"><img src="icon-arrow.svg" alt="arrow"></button>
+            </div>
+            <p id="error"></p>
+        </div>
+        <div class="background"></div>
+    </main>
+    <section id="mobile">
+        <header class="logo"><img src="logo.svg" alt=""></header>
+        <div class="background-mobile"></div>
+        <div class="info-area-mobile">
+        <h2 id="pink">We're</h2>
+        <h2 id="black">Coming Soon </h2>
+        <p id="info">Hello felow shoppers! We're currently building our new fashion store
+        . Add your email below to stay up-to-date with announcements and launch deals.</p>
+        <div class="input-email">
+            <input class="text-input-mobile" type="text" placeholder="Email Address">
+            <img id="img-error-mobile" src="icon-error.svg" alt="">
+            <button onclick="error()"><img src="icon-arrow.svg" alt="arrow"></button>
+        </div>
+        <p id="error-mobile"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

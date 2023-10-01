@@ -1,0 +1,232 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.info-area{
+    background-image: url(bg-pattern-desktop.svg);
+    background-size: cover;
+    padding: 50px 160px;
+}
+
+#pink{
+    margin-top: 70px;
+    color: hsl(0, 36%, 70%);
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 55px;
+    letter-spacing: 0.8ch;
+}
+
+#black{
+    color: hsl(0, 6%, 24%);
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.6ch;
+}
+
+#info{
+    margin-top: 30px;
+    color: hsl(0, 36%, 70%);
+    font-size: 16px;
+    max-width: 76%;
+}
+
+.input-email{
+    margin-top: 50px;
+}
+
+.text-input{
+    width: 65%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: 0;
+    border: 1px solid #ccc;
+}
+
+.text-input::placeholder{
+    color: hsl(0, 36%, 70%);
+    font-size: 15px;
+}
+#error{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: hsl(0, 93%, 68%);
+}
+
+button{
+    padding: 10px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border: 0px;
+    border-radius: 50px;
+    width: 80px;
+    margin-left: -70px;
+    position: absolute;
+    box-shadow: 1px 6px 10px hsl(0, 80%, 86%);
+    cursor: pointer;
+}
+button:hover{
+    background:  hsl(0, 80%, 86%);
+}
+.background{
+    background-image: url(hero-desktop.jpg);
+    background-size: cover;
+}
+
+#mobile{
+    display: none;
+}
+
+#img-error{
+    margin-left: -100px;
+    position: absolute;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (min-width : 1920px) {
+    #pink{
+        margin-top: 120px;
+    }
+    #black{
+        max-width: 1px;
+    }
+
+    #info{
+        max-width: 45%;
+    }
+
+    .text-input{
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width : 769px) and (max-width: 1024px) {
+    .info-area{
+        padding: 50px 110px;
+    }
+
+    #pink{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    #black{
+        font-size: 55px;
+    }
+    
+    #info{
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width : 601px) and (max-width : 768px) {
+    .info-area{
+        padding: 50px 80px;
+    }
+
+    #pink{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    #black{
+        font-size: 55px;
+    }
+    
+    #info{
+        max-width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #desktop{
+        display: none;
+    }
+
+    #mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #mobile header{
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    header img{
+        width: 110px;
+        margin-left: 40px;
+    }
+
+    .background-mobile{
+        background: url(hero-mobile.jpg);
+        width: inherit;
+        height: 255px;
+        background-size: cover;
+    }
+
+    .info-area-mobile{
+        padding: 60px 37px;
+    }
+
+    #pink{
+        font-size: 40px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    #black{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #info {
+        font-size: 14px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text-input-mobile{
+        width: 80%;
+        width: 80%;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-size: 16px;
+        outline: 0;
+        border: 1px solid #ccc;
+    }
+
+    .text-input-mobile::placeholder{
+        color: hsl(0, 36%, 70%);
+        font-size: 15px;
+    }
+
+    #img-error-mobile{
+        margin-left: -100px;
+        position: absolute;
+        margin-top: 10px;
+        display: none;
+    }
+
+    #error-mobile{
+        margin-left: 25px;
+        margin-top: 10px;
+        font-size: 13px;
+        color: hsl(0, 93%, 68%);
+    }
+}
